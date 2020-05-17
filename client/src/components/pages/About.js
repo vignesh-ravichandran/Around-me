@@ -10,7 +10,7 @@ function About() {
         <p>version : 1.0 </p>
         <div>
           <ul>
-            <li> Discussions around 1000 meters alone are shown</li>
+            <li> Discussions around 5kms alone are shown</li>
             
             <li> Please enable location access </li>
           </ul>

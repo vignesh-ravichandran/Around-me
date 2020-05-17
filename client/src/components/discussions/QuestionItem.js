@@ -51,8 +51,8 @@ const popuplateDistance=()=>{
   if(userLocation!=null){
           
     const dist=   getDistanceBetweenPoints(userLocation[1], userLocation[0], question.location.coordinates[1], question.location.coordinates[0])
-
-   return dist.toFixed(1);
+    const d=dist/1000;
+   return d.toFixed(1);
      }
  }
 
@@ -81,7 +81,7 @@ const popuplateDistance=()=>{
         <div className="card-body">
     <h5 className="card-title">{author.username}</h5>
     <p className="card-text">{text}</p>
-    <a href="#" className="btn btn-secondary btn-sm" onClick={view}>View</a>  <a href="#" className="btn btn-secondary btn-sm" >{popuplateDistance()} m</a>
+    <a href="#" className="btn btn-secondary btn-sm" onClick={view}>View</a>  <a href="#" className="btn btn-secondary btn-sm" >{popuplateDistance()} Kms</a>
         </div>
       </div>
         </div>

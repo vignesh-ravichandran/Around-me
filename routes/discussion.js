@@ -33,7 +33,7 @@ router.get('/',auth, async (req,res)=>{
                     type: 'Point',
                     coordinates: location
                   },
-                  $maxDistance: 1000
+                  $maxDistance: 5000
                 }
               }
             });

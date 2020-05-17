@@ -65,8 +65,8 @@ const Discussion=({currentQuestion, userLocation})=> {
     if(userLocation!=null){
             
       const dist=   getDistanceBetweenPoints(userLocation[1], userLocation[0], currentQuestion.location.coordinates[1], currentQuestion.location.coordinates[0])
-  
-     return dist.toFixed(1);
+      const d=dist/1000;
+      return d.toFixed(1);
        }
    }
   
@@ -77,7 +77,7 @@ const Discussion=({currentQuestion, userLocation})=> {
         <div>
           <div class="alert alert-dark mt-4" role="alert">
            <button  class="btn btn-secondary btn-sm float-right" onClick={clearCurrent}>Close</button>
-           <button  class="btn btn-secondary btn-sm float-right mr-1" >{popuplateDistance()} m</button>
+           <button  class="btn btn-secondary btn-sm float-right mr-1" >{popuplateDistance()} Kms</button>
           <p> {text} </p>
           <span class="badge badge-dark">{author.username}</span> 
 </div>
