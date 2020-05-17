@@ -1,0 +1,7 @@
+{
+
+    "mongoURI":"mongodb+srv://vigneshravichandran:vigneshravichandran@cluster0-amiqd.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret":"secret"
+   
+}
+
